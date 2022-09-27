@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+</head>
+<body>
+    <h2 id="info">Share your information with us!</h2>
+
+    <form action="do_something.html" method="post">
+        <fieldset id="personal-info">
+          <legend>Personal Info</legend>
+          <label for="fname">First name:</label>    
+          <input type="text" id="fname" name="fname" required>    
+        </fieldset>
+    </form>
+    <br>
+    <form action="do_something.html" method="post">
+        <label for="f1name">First name:</label>    
+        <input type="text" id="f1name" name="f1name" required>    
+    </form>
+    <!--tabindex will let the user jump in our order from 0 to ..-->
+    <form action="./index.html" autocomplete="on">
+        <label for="fname" >first name</label><br>
+        <!--label for and id should be the same . when we click on the label we go to the input if we have id and for linked
+            ID can also be used. id is for css. in form it's better to use name. name is enough for css also. -->
+        <input type="text" name="fname" id="fname" autofocus tabindex="0" ><br> <!--name will be used with javascript-->
+        <label for="">age</label><br>
+        <input type="number" tabindex="1"><br>
+        <label for="">click</label><br>
+        <input type="button"><br>
+        <label for="">password</label><br>
+        <input type="password" autocomplete="off" tabindex="2" pattern="^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"><br>
+        <label for="">email</label><br>
+        <input type="email" value="tubakadriye@gmail.com" placeholder="Type your email" required ><br> 
+        <!--if we use both if they delete value they will get placeholder-->
+        <!--required is used for mandatory.
+        autocomplete is for previous info entered. 
+        autofocus is for the first cxursor field. -->
+        <label for="">color</label><br>
+        <input type="color" ><br>
+        <label for="">date</label><br>
+        <input type="date"><br>
+        <label for="">search</label><br>
+
+
+        <input type="search"><br>
+        <label for="">tel</label><br>
+        <input type="tel"><br>
+        <label for="">image</label><br> <!--submit button just change the picture of submit-->
+        <input type="image"><br> 
+
+
+        <label for="">radio female</label>
+        <input type="radio">
+        <label for="">radio male</label>
+        <input type="radio"><br>
+        <label for="">checkbox I have a bike</label>
+        <input type="checkbox"><br>
+        <label for="">checkbox I have home</label>
+        <input type="checkbox"><br>
+
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br>
+
+        <label for="browsers">browsers</label>
+
+        <input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Google Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+        
+    <input type="submit">
+    <input type="reset">
+    <!--<button type="submit"></button>-->
+    <input type="button" value="Click me" onclick="msg()">
+
+    
+
+    </form>
+
+    <section>
+        <h4 id="title">My title</h4>
+        <p>frgg</p>
+        <button>Read more about this article</button>
+        <p>effrgtg</p>
+    </section>
+    <section>
+        <h4>My title</h4>
+        <p>frgg</p>
+        <a href="www.rts.ch">Read more about ...</a> <!--not good to use button for external link. better to use a link-->
+        
+    </section>
+
+    <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
+
+      <!-- Password field -->
+Password: <input type="password" value="FakePSW" id="myInput">
+
+<!-- An element to toggle between password visibility -->
+<input type="checkbox" onclick="myFunction()">Show Password
+    
+    
+</body>
+</html>
+
+<!--button size height width 48 px-->

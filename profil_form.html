@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+</head>
+<body>
+    <h2>Profil</h2>
+    <p>
+        <strong>Hier können Sie Ihre Adress-Angaben einsehen und anpassen.</strong>
+    </p>
+
+    <form action="do_something.html" method="post" autocomplete="on">
+        <fieldset id="profil">
+          <legend><strong>Persönliche Daten</strong> </legend>
+          <label for="title">Titel</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+          <input type="text" id="title" name="title" required placeholder="Dr.hc" autofocus> <br><br>
+          <label for="fname">Vorname</label>&nbsp; &nbsp;     &nbsp; 
+          <input type="text" id="fname" name="fname" required placeholder="Peter"> <br> <br> 
+          <label for="lname">Nachname</label>&nbsp; &nbsp;    
+          <input type="text" id="lname" name="lname" required placeholder="Muster"> <br><br>
+          <label for="gender">Geschlecht</label>&nbsp; &nbsp; 
+          <label for="female">W</label>   
+          <input type="radio" id="female" name="female" required> &nbsp; &nbsp; 
+          <label for="male">M</label>    
+          <input type="radio" id="male" name="male" required> <br><br>
+
+          <label for="lang">Sprache</label>&nbsp; &nbsp;  &nbsp; &nbsp; 
+          <label for="de">DE</label>   
+          <input type="radio" id="de" name="de" required> &nbsp; &nbsp; 
+          <label for="fr">FR</label>    
+          <input type="radio" id="fr" name="fr" required> 
+          <label for="it">IT</label>    
+          <input type="radio" id="it" name="it" required> 
+          
+        </fieldset>
+        <br>
+
+
+        <fieldset id="contact">
+            <legend><strong>Kontaktdaten</strong> </legend>
+            <label for="tel">Telefon</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="tel" id="tel" name="tel" required > <br><br>
+            <label for="mobile">Mobile</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="tel" id="mobile" name="mobile" placeholder="optional" > <br><br>
+            <label for="main">Hauptnummer</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="tel" id="main" name="main" placeholder="optional" > <br><br>
+            <label for="fax">Fax</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="number" id="fax" name="fax" placeholder="optional" > <br><br>
+            <label for="mail1">Mail 1</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="email" id="mail1" name="mail1" required > <br><br>
+            <label for="mail2">Mail 2</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="email" id="mail2" name="mail2" placeholder="optional" > <br><br>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><strong>Adressdaten</strong> </legend>
+            <label for="firma">Firma</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="text" id="firma" name="firma" required > <br><br>
+            <label for="zfirma">Zusatz Firma</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="text" id="zfirma" name="zfirma" required placeholder="optional" > <br><br>
+            <label for="home">Homepage</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="url" id="home" name="home" required placeholder="optional" > <br><br>
+            <label for="Adrs">Adresse / </label><label for="hnum">Haus Nr</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="text" id="Adrs" name="Adrs" required placeholder="Musterstrasse" >&nbsp;
+            <input type="number" id="hnum" name="hnum" placeholder="33" > <br><br>
+            <label for="zadr">Zusatz Adresse</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="text" id="zadr" name="zadr" placeholder="optional" > <br><br>
+            <label for="postfach">Postfach</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="number" id="postfach" name="postfach" placeholder="optional" > <br><br>
+            <label for="plz">PLZ / </label><label for="ort">Ort</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="number" id="plz" name="plz" placeholder="8800" > &nbsp;
+            <input type="text" id="ort" name="ort" required placeholder="Musterstadt" > <br><br>
+            <label for="kanton">Kanton / </label><label for="land">Land</label>&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+            <input type="text" id="kanton" name="kanton" required placeholder="ZH" >&nbsp;
+            <input type="text" id="land" name="land" required placeholder="Schweiz" > <br><br>
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Speichern">
+    </form>
+    
+</body>
+</html>
